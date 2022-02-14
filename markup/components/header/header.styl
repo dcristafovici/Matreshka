@@ -1,0 +1,38 @@
+.header
+  position absolute
+  left 0
+  top 0
+  width 100%
+  z-index 5
+  &-wrapper
+    display flex
+    justify-content space-between
+  nav.menu
+    ul
+      display flex
+      align-items center
+      li
+        margin-right 40px
+        &:last-child
+          margin-right 0
+      a
+        font-size 18px
+        letter-spacing: 0.04em
+        line-height 1.5
+        color $wh
+        font-family $Light
+  &-right
+    display flex
+    a,
+    span
+      font-size 18px
+      line-height 1.5
+      letter-spacing: 0.04em
+      color $wh
+  &-phone
+    margin-right 40px
+  
+  &-left,
+  &-right
+    padding-top 24px
+    bb()

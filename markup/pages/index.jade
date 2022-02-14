@@ -2,6 +2,7 @@ doctype html
 html(class="no-js", lang="ru")
 
   include ../components/head/head
+  include ../components/header/header
   include ../components/home/home
   include ../components/about/about
   include ../components/show/show
@@ -14,6 +15,8 @@ html(class="no-js", lang="ru")
     |%=symbols=%
     
     main.matreshka-main
+
+      +header()
 
       +home()
 
