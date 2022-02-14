@@ -1,0 +1,31 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  include ../components/header/header
+  include ../components/contacts/contacts
+  include ../components/mnu/mnu
+  include ../components/maps/maps
+  include ../components/footer/footer
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+    script(src="https://api-maps.yandex.ru/2.1/?apikey=0e080473-e60f-44c2-977e-050f5c7c426c&lang=ru_RU" type="text/javascript")
+    main.matreshka-main
+
+      +header()
+
+      +mnu()
+
+      +maps()
+
+      +contacts()
+
+      +footer()
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
