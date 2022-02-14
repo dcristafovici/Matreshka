@@ -1,27 +1,68 @@
 // Mixins.
 
 m-nl()
-    margin 0
-    padding 0
-    text-indent 0
-    list-style none
-    list-style-position outside
+  margin 0
+  padding 0
+  text-indent 0
+  list-style none
+  list-style-position outside
 
 m-cf()
-    &:before, &:after
-        display table
-        content ""
+  &:before, &:after
+    display table
+    content ""
 
-    &:after
-        clear both
+  &:after
+    clear both
 
-    .lt-ie8 &
-        zoom 1
+  .lt-ie8 &
+    zoom 1
 
 
 m-blocks-justify()
-    text-align justify
-    text-justify newspaper
+  text-align justify
+  text-justify newspaper
+
+
+d-flex-center()
+  display: flex
+  justify-content: center
+  align-items: center
+
+d-flex-right()
+  display: flex
+  justify-content: center
+  align-items: center
+
+d-flex-between()
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+bb()
+  box-sizing: border-box
+
+
+hdn()
+  opacity 0
+  transition: $tr
+  transform  translateY(30px)
+
+showed()
+  opacity: 1
+  transform: translate(0)
+
 
 
 // You can add your own mixins here:
+
+
+placeholder()
+  &::-webkit-input-placeholder
+    {block}
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}

@@ -1,0 +1,58 @@
+.home
+  height 100vh
+  position relative
+  &-video
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    &::before
+      content ''
+      position absolute
+      left 0
+      top 0
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, #000000 92.85%)
+      width 100%
+      height 100%
+    img
+      width 100%
+      height 100%
+      object-fit cover
+  
+  .content
+    position relative
+    z-index 3
+    display flex
+    flex-direction column
+    height 100%
+    justify-content center
+    align-items center
+  &-title
+    margin-bottom 12px
+    h1
+      font-size 72px
+  &-subtitle
+    margin-bottom 40px
+    span
+      color $wh
+      font-size 24px
+      font-family $ExtraLight
+      letter-spacing 0.05em
+      text-transform uppercase
+
+  &-worktime
+    text-align center
+    margin-bottom 88px
+    span
+      display block
+      font-size 16px
+      color $wh
+      letter-spacing 0.05em
+      text-transform uppercase
+      line-height 1.5
+      font-weight $ExtraLight
+  &-button
+    display flex
+    justify-content center
+    align-items center

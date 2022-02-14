@@ -1,0 +1,16 @@
+include ../button/button
+mixin home(data)
+  section.home  
+    .home-video
+      img(src="static/img/assets/home/home.jpg", alt="Home")
+    .content  
+      .home-content
+        .home-title  
+          h1 matryoshka city
+        .home-subtitle 
+          span The first night club in Moscow City - theater 
+        .home-worktime
+          span Wed - Sat
+          span 22:00 - 06:00
+        .home-button
+          +button('#', 'Бронь')

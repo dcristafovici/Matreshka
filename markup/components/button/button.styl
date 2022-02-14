@@ -1,0 +1,22 @@
+.button
+  height 60px
+  display inline-flex
+  align-items center
+  border-radius 4px
+  background: rgba(255, 0, 178, 0.2);
+  backdrop-filter: blur(40px);
+  padding-left 32px
+  padding-right 32px
+  cursor pointer
+  outline none
+  transition $tr
+  span
+    color $wh
+    text-transform uppercase
+    letter-spacing: 0.04em
+    font-family $Regular
+  &:hover
+    background: rgba(255, 0, 178, 0.4);
+  &:active,
+  &:focus
+    background: rgba(255, 0, 178, 0.8);
