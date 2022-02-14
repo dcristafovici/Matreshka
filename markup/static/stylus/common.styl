@@ -53,3 +53,52 @@ h5
 a
   text-decoration none
   color inherit
+
+
+.slick-slide 
+  margin 0 23px
+  outline none
+.slick-list 
+  margin 0 -23px
+
+.slick-arrow
+  width 48px
+  height 48px
+  display flex
+  justify-content center
+  align-items center
+  outline none
+  cursor pointer
+  border none
+  background none
+  background: rgba(0, 0, 0, 0.6);
+  border-radius 50%
+  font-size 0
+  position absolute
+  left 70px
+  top 50%
+  margin-top -24px
+  z-index 4
+  transition $tr
+  &:hover
+    transform scale(1.33333)
+    background: rgba(255, 0, 178, 0.6);
+  &:active
+    background $pink
+    transform scale(1.2)
+  &::before
+    content ''
+    position absolute
+    left 50%
+    top 50%
+    width 16px
+    height 16px
+    margin-top -8px;
+    margin-left -8px
+    background url('../img/assets/interior/arr.svg') no-repeat center/contain
+    
+  &.slick-next
+    left auto
+    right 70px
+    &::before
+      transform rotate(180deg)
