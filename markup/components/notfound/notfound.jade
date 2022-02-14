@@ -1,0 +1,12 @@
+include ../button/button
+mixin notfound(data)
+  section.notfound
+    .home-video
+      img(src="static/img/assets/home/home.jpg", alt="Home")
+    .content
+      .notfound-title
+        h1 Страница не найдена
+      .notfound-paragraph
+        p Страница не найдена, либо еще не создана
+      .notfound-button
+        +button('#',' На главную')
