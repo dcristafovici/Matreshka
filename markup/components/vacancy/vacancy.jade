@@ -1,0 +1,53 @@
+include ../button/button
+mixin vacancy(data)
+  section.vacancy
+    .home-video
+      img(src="static/img/assets/home/home.jpg", alt="Home")
+    .content
+      .vacancy-title
+        h1 Вакансии
+      .vacancy-paragraph
+        p Амбициозный Проект приглашает на работу талантливых танцовщиц, актрис эротического жанра, гимнасток, балерин умеющих творить и удивлять! Отправляй своё резюме на почту и укажи интересующую вакансию или записывайся на собеседование по телефону.
+      .vacancy-items
+        .vacancy-item
+          span Вакансии и кастинг:
+          a(href="tel:+7 (999) 336-01-86") +7 (999) 336-01-86
+        .vacancy-item
+          span E-mail:
+          a(href="mailto:pochta@mail.ru") pochta@mail.ru
+        .vacancy-item
+          span Instagram
+          a(href="https://www.instagram.com/matryoshkacitycasting/" rel='nofollow' target='_blank') @matryoshkacitycasting
+        .vacancy-item
+          span Адрес
+          span 1й Красногвардейский проезд 21с2, башня «ОКО», 6 этаж
+      
+      .vacancy-points
+        .vacancy-point
+          .vacancy-point__name Официант
+          .vacancy-point__list
+            ul
+              li Бесплатное обучение в процессе работы
+              li Гибкий график работы
+              li З/п от 60 000 ₽ (ставка 2300 ₽ + чай)
+        .vacancy-point
+          .vacancy-point__name Хостес
+          .vacancy-point__list
+            ul
+              li Бесплатное обучение в процессе работы
+              li Гибкий график работы
+              li З/п от 70 000 ₽ (ставка 4000 ₽ + чай)
+        .vacancy-point
+          .vacancy-point__name Официант
+          .vacancy-point__list
+            ul
+              li З/п от 100 000 ₽
+              li Удобный график работы
+              li Услуги стилиста
+              li Услуги профессионального хореографа
+              li Полная конфиденциальность и безопасность
+           
+      .vacancy-info  Собеседование проходит со среды по субботу, с 19:00 до 21:00, по адресу 1й Красногвардейский проезд 21с2, Башня ОКО
+    
+      .vacancy-button
+        +button('#','Связаться')

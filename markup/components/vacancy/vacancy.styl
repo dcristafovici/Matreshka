@@ -1,0 +1,70 @@
+.vacancy
+  position relative
+  padding-top 240px
+  padding-bottom 160px
+  .content
+    position relative
+    z-index 2
+  &-title
+    h1
+      font-size 56px
+      margin-bottom 30px
+  &-paragraph
+    margin-bottom 30px
+    p
+      font-size 16px
+      line-height 1.75
+      font-family $Inter
+  &-items
+    display flex
+    margin-bottom 70px
+    justify-content space-between
+  &-item
+    span
+      display block
+      font-size 20px
+      line-height 1.2
+      letter-spacing 0.04em
+      color $gray
+      margin-bottom 12px
+    a,
+    span
+      &:nth-child(2)
+        font-size 20px
+        line-height 1.2
+        color $wh
+        letter-spacing 0.04em
+  &-points
+    margin-bottom 15px
+  &-point
+    margin-bottom 40px
+    &__name
+      font-size 24px
+      line-height 1
+      text-transform uppercase
+      color $wh
+      margin-bottom 15px
+      font-family $Inter
+    &__list
+      li
+        font-size 16px
+        line-height 1.75
+        font-family $Inter
+        color $wh
+        position relative
+        padding-left 12px
+        &::before
+          content ''
+          position absolute
+          left 0
+          top 12px
+          width 4px
+          height 4px
+          background $pink
+          border-radius 50%
+
+  &-info
+    font-size 16px
+    font-family $Reg
+    margin-bottom 70px
+    color $wh
