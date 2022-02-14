@@ -11,5 +11,10 @@ mixin show(data)
           p Золотым правилом иммерсивного театра Matryoshka City является согласие. Для нас это означает, что мы всегда спрашиваем, прежде чем прикоснуться.
         .show-right
           .show-video   
-             a(href="#" data-fancybox)
+             a(href="video.mp4" data-fancybox)
+              .show-video__text
+                  span Смотреть
+                    br
+                    | видео
+                  != jadeHelpers.Icon.call(locals, {iconName: 'play', className: 'svg-icon', iconWidth: '60', iconHeight: '60'})
               img(src="static/img/assets/show/s1.jpg", alt="Show") 
