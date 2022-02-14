@@ -1,0 +1,32 @@
+mixin contacts(data)
+  section.contacts
+    .content
+      .contacts-wrapper
+
+        .contacts-left
+          .title
+            h2 Контакты
+        .contacts-right
+          .contacts-items
+            .contacts-item 
+              span Адрес
+              span Москва-Сити, башня “ОКО”, 6 этаж
+            .contacts-item 
+              span Бронь:
+              a(href="tel:+7 (999) 336-01-86") +7 (999) 336-01-86 
+              a(href="#") Написать в Telegram 
+            .contacts-item 
+              span Режим работы:
+              span 22:00 - 06:00
+              span Cреда - Суббота
+            .contacts-item 
+              span Социальные сети:
+              ul
+                li
+                  a(href="#", target="_blank", rel="nofollow")
+                    != jadeHelpers.Icon.call(locals, {iconName: 'insta', className: 'svg-icon', iconWidth: '20', iconHeight: '20'})
+                li
+                  a(href="#", target="_blank", rel="nofollow")
+                    != jadeHelpers.Icon.call(locals, {iconName: 'fb', className: 'svg-icon', iconWidth: '20', iconHeight: '20'})
+            .contacts-button
+              +button('#','Бронь')

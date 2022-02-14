@@ -1,0 +1,55 @@
+.footer
+  padding-top 56px
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 31.49%), #101010;
+  padding-bottom 32px
+  &-logo
+    display flex
+    justify-content center
+    align-items center
+    margin-bottom 40px
+  &-nav
+    margin-bottom 64px
+    ul
+      display flex
+      align-items center
+      justify-content space-between
+      a
+        font-size 18px
+        line-height 1.7
+        letter-spacing:  0.04em
+        color $wh
+        font-family $Light
+  &-languages
+    margin-bottom 15px
+    ul
+      display flex
+      justify-content center
+      align-items center
+      li
+        margin-right 27px
+        &:last-child
+          margin-right 0
+        a
+          font-size 14px
+          line-height 1.5
+          font-family $ExtraLight
+          color $gray
+          transition $tr
+          &:hover
+            color $wh
+        &.active
+          a
+            color $wh
+  &-policy
+    text-align center
+    a
+      font-size 12px
+      line-height 1.167
+      color $gray
+      font-family $Light
+      display block
+      margin-bottom 5px
+    span
+      font-size 12px
+      color $gray
+      font-family $ExtraLight

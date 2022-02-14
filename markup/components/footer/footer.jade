@@ -1,0 +1,39 @@
+mixin footer(data)
+  footer.footer
+    .content
+      .footer-logo
+        != jadeHelpers.Icon.call(locals, {iconName: 'footer', className: 'svg-icon', iconWidth: '122', iconHeight: '120'})
+      .footer-nav
+        ul
+          li
+            a(href="#") Главная
+          li
+            a(href="#") О клубе
+          li
+            a(href="#") Этикет
+          li
+            a(href="#") Меню
+          li
+            a(href="#") Галерея
+          li
+            a(href="#") Частные мероприятия
+          li
+            a(href="#") Вакансии
+          li
+            a(href="#") Контакты
+      
+
+      .footer-languages
+        ul
+          li.active
+            a(href="#") Русский
+          li
+            a(href="#") English
+          li
+            a(href="#") 中文
+          li
+            a(href="#") العربية
+
+      .footer-policy
+        a(href="#") Политика конфиденциальности
+        span 2022 © All rights reserved

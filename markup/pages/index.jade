@@ -6,6 +6,8 @@ html(class="no-js", lang="ru")
   include ../components/about/about
   include ../components/show/show
   include ../components/bar/bar
+  include ../components/contacts/contacts
+  include ../components/footer/footer
   head
     +head(head.defaults)
   body.page
@@ -20,7 +22,11 @@ html(class="no-js", lang="ru")
       +show()
     
       +bar()
-      
+
+      +contacts()
+
+      +footer()
+
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
 

@@ -1,0 +1,45 @@
+.contacts
+  padding-bottom 200px
+  &-wrapper
+    display flex
+    justify-content space-between
+  &-left
+    width 45%
+  &-right
+    width 45%
+  &-item
+    margin-bottom 40px
+    ul
+      display flex
+      align-items center
+      li
+        margin-right 8px
+        &:last-child
+          margin-right 0
+        svg
+          transition $tr
+    span
+      display block
+      font-size 20px
+      line-height 1.2
+      letter-spacing: 0.04em
+      color $gray;
+      margin-bottom 12px
+    a:nth-child(2),
+    span:nth-child(2)
+      font-size 24px
+      line-height 1
+      color $wh
+      letter-spacing: 0.04em
+      font-family $Light
+      margin-bottom 8px
+      display block
+    a:nth-child(3),
+    span:nth-child(3)
+      font-size 14px
+      color $wh
+      letter-spacing: 0.04em
+      line-height 1.71
+      color $Light
+      display block
+  
