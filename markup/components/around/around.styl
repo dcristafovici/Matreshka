@@ -1,0 +1,38 @@
+.around
+  position relative
+  padding-top 240px
+  padding-bottom 120px
+  .content
+    position relative
+    z-index 5
+  h1
+    font-size 56px
+  &-content
+    h1
+      margin-bottom 32px
+    p
+      margin-bottom 20px
+    h4
+      margin-bottom 32px
+      margin-top 60px
+    ul
+      li
+        padding-left 12px
+        position relative
+        font-size 14px
+        line-height 1.7
+        font-family $Inter
+        margin-bottom 12px
+        &:last-child
+          margin-bottom 0
+        color $wh
+        &::before
+          content ''
+          position absolute
+          border-radius 50%
+          left 0
+          top 10px
+          width 4px
+          height 4px
+          background $pink
+          
