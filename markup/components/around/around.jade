@@ -1,7 +1,8 @@
 mixin around(data)
   section.around
     .home-video
-      img(src="static/img/assets/home/home.jpg", alt="Home")
+      video(muted="muted" preload="auto" height="auto" autoplay="autoplay" loop="loop")
+        source(src='video.mp4' type="video/mp4")
     .content
       .around-content
         h1 О клубе

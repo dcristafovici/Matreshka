@@ -1,5 +1,61 @@
+include ../button/button
 mixin header(data)
   header.header
+    .header-mnu
+      .content 
+        .footer-languages
+          ul
+            li.active
+              a(href="#") Русский
+            li
+              a(href="#") English
+            li
+              a(href="#") 中文
+            li
+              a(href="#") العربية
+        .header-mnu__wrapper
+          .header-mnu__left
+            ul
+              li
+                a(href="#") Главная
+              li
+                a(href="#") О клубе
+              li
+                a(href="#") Этикет
+              li
+                a(href="#") Меню
+              li
+                a(href="#") Частные мероприятия 
+              li
+                a(href="#") Контакты
+          .header-mnu__right
+            .contacts-items
+              .contacts-item 
+                span Адрес
+                span Москва-Сити, башня “ОКО”, 6 этаж
+              .contacts-item 
+                span Бронь:
+                a(href="tel:+7 (999) 336-01-86") +7 (999) 336-01-86 
+                a(href="#") Написать в Telegram 
+              .contacts-item 
+                span Режим работы:
+                span 22:00 - 06:00
+                span Cреда - Суббота
+              .contacts-item 
+                span Социальные сети:
+                ul
+                  li
+                    a(href="#", target="_blank", rel="nofollow")
+                      != jadeHelpers.Icon.call(locals, {iconName: 'insta', className: 'svg-icon', iconWidth: '20', iconHeight: '20'})
+                  li
+                    a(href="#", target="_blank", rel="nofollow")
+                      != jadeHelpers.Icon.call(locals, {iconName: 'fb', className: 'svg-icon', iconWidth: '20', iconHeight: '20'})
+              .contacts-button
+                +button('#','Бронь')
+    .header-burger#header-burger
+      button.hamburger.hamburger--collapse
+        span.hamburger-box
+          span.hamburger-inner
     .content
       .header-wrapper
         .header-left

@@ -5,10 +5,12 @@ html(class="no-js", lang="ru")
   include ../components/header/header
   include ../components/around/around
   include ../components/contacts/contacts
+  include ../components/maps/maps
   include ../components/conditions/conditions
   include ../components/footer/footer
   head
     +head(head.defaults)
+    script(src="https://api-maps.yandex.ru/2.1/?apikey=0e080473-e60f-44c2-977e-050f5c7c426c&lang=ru_RU" type="text/javascript")
   body.page
     |%=symbols=%
     
@@ -19,6 +21,8 @@ html(class="no-js", lang="ru")
       +around()
 
       +conditions()
+
+      +maps()
 
       +contacts()
 

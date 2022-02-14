@@ -2,7 +2,8 @@ include ../button/button
 mixin private(data)
   section.private
     .home-video
-      img(src="static/img/assets/home/home.jpg", alt="Home")
+      video(muted="muted" preload="auto" height="auto" autoplay="autoplay" loop="loop")
+        source(src='video.mp4' type="video/mp4")
     .content
       .private-title
         h1 Частные мероприятия

@@ -36,3 +36,203 @@
   &-right
     padding-top 24px
     bb()
+  &-center
+    a
+      display flex
+      justify-content center
+      align-items center
+
+
+.hamburger 
+  padding: 0
+  display: inline-block
+  cursor: pointer
+  -webkit-transition-property: opacity, -webkit-filter
+  transition-property: opacity, -webkit-filter
+  transition-property: opacity, filter
+  transition-property: opacity, filter, -webkit-filter
+  -webkit-transition-duration: 0.15s
+  transition-duration: 0.15s
+  -webkit-transition-timing-function: linear
+  transition-timing-function: linear
+  font: inherit
+  color: inherit
+  text-transform: none
+  background-color: transparent
+  border: 0
+  margin: 0
+  outline: none
+  overflow: visible
+
+
+.hamburger:hover 
+  opacity: 1
+
+
+.hamburger.is-active:hover 
+  opacity: 1
+
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after 
+  background-color: #ffffff
+
+
+.hamburger-box 
+  width: 30px
+  height: 24px
+  display: inline-block
+  position: relative
+
+
+.hamburger-inner 
+  display: block
+  top: 50%
+  margin-top: -2px
+
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after 
+  width: 30px
+  height: 3px
+  background-color: #ffffff
+  border-radius: 4px
+  position: absolute
+  -webkit-transition-property: -webkit-transform
+  transition-property: -webkit-transform
+  transition-property: transform
+  transition-property: transform, -webkit-transform
+  -webkit-transition-duration: 0.15s
+  transition-duration: 0.15s
+  -webkit-transition-timing-function: ease
+  transition-timing-function: ease
+
+
+.hamburger-inner::before,
+.hamburger-inner::after 
+  content: ""
+  display: block
+
+
+.hamburger-inner::before 
+  top: -10px
+
+
+.hamburger-inner::after 
+  bottom: -10px
+
+
+.hamburger--collapse .hamburger-inner 
+  top: auto
+  bottom: 0
+  -webkit-transition-duration: 0.13s
+  transition-duration: 0.13s
+  -webkit-transition-delay: 0.13s
+  transition-delay: 0.13s
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+
+
+.hamburger--collapse .hamburger-inner::after 
+  top: -20px
+  -webkit-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear
+
+
+.hamburger--collapse .hamburger-inner::before 
+  -webkit-transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+
+
+.hamburger--collapse.is-active .hamburger-inner 
+  -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg)
+  transform: translate3d(0, -10px, 0) rotate(-45deg)
+  -webkit-transition-delay: 0.22s
+  transition-delay: 0.22s
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+
+.hamburger--collapse.is-active .hamburger-inner::after 
+  top: 0
+  opacity: 0
+  -webkit-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear
+
+
+.hamburger--collapse.is-active .hamburger-inner::before 
+  top: 0
+  -webkit-transform: rotate(-90deg)
+  transform: rotate(-90deg)
+  -webkit-transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1)
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1)
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1)
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1)
+
+
+
+.header-burger
+  position absolute
+  left 15px
+  top 24px
+  z-index 6
+
+.header-mnu 
+  position absolute
+  left 0
+  top 0
+  width 100%
+  height 100vh
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(40px);
+  transform translateY(-100%)
+  opacity 0
+  z-index -1
+  visibility hidden
+  pointer-events none
+  transition $tr
+  &.is-active
+    opacity 1
+    transform translateY(0)
+    z-index 5
+    visibility visible
+    pointer-events all
+  .content
+    height 100%
+  .footer-languages
+    position absolute
+    top 24px
+    ul
+      justify-content flex-start
+  &__wrapper
+    display flex
+    height 100%
+    justify-content space-between
+  &__left
+    width 50%
+    ul
+      display block
+      li
+        a
+          font-size 56px
+          letter-spacing 0.02em
+          text-transform uppercase
+          color $wh
+          font-family $ExtraLight
+  &__right
+    width 50%
+  &__left,
+  &__right
+    display flex
+    flex-direction column
+    justify-content center
+  
+  &__left
+    li
+      margin-bottom 30px
+      &:last-child
+        margin-bottom 0
